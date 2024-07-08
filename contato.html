@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contato</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="experiencia.html">Experiência Profissional</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form action="https://httpbin.org/post" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="tipo">Você é um recrutador?</label>
+            <select id="tipo" name="tipo" required>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+        <p><a href="index.html">Voltar para a página principal</a></p>
+    </section>
+</body>
+</html>
